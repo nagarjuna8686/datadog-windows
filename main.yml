@@ -6,7 +6,7 @@
       win_copy:
           src: datadog-agent-6-latest.amd64.msi
           dest: C:\
-   -  name: install
+    - name: install
       win_package:
           path: C:\datadog-agent-6-latest.amd64.msi
           productid: 851bf2378d07e077d8fda80aa133ab91
