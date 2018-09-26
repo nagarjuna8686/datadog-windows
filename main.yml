@@ -1,7 +1,6 @@
 ---
 - hosts: 18.223.23.236
   tasks:
-    - name: install datadog on windows
     - name: copy file
       win_copy:
           src: datadog-agent-6-latest.amd64.msi
