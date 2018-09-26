@@ -1,0 +1,9 @@
+---
+- hosts: 18.223.23.236
+  tasks:
+    - name: install datadog on windows
+      win_package:
+        path: msiexec /qn /i datadog-agent-6-latest.amd64.msi APIKEY="851bf2378d07e077d8fda80aa133ab91" 
+        arguments: /install /passive /norestart
+        productid: auto
+        failed_when: False
